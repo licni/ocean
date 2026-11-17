@@ -27,6 +27,16 @@
 
 ![對照圖](images/compare-with-reference.jpg)
 
+## 原始碼與重新建置
+
+`src/` 是 WebGL2 引擎與共用的頁面／輸入／數學部分，`g/` 是 WebGPU 引擎（地形、模型、光影、生物、渲染迴圈）。`build.py` 把它們組合成單一 `index.html`：
+
+```
+python3 build.py
+```
+
+只需要 Python 3，不需安裝任何套件。
+
 ## 致謝
 
 美術方向參考 [Noniv/abyssal-garden](https://github.com/Noniv/abyssal-garden)（MIT 授權）；本作品的程式為獨立重寫。
